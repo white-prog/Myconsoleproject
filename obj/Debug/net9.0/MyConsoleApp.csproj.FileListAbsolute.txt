@@ -26,3 +26,4 @@ C:\Users\ASUS\Desktop\dotnet\MyConsoleApp\obj\Debug\net9.0\refint\MyConsoleApp.d
 C:\Users\ASUS\Desktop\dotnet\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.pdb
 C:\Users\ASUS\Desktop\dotnet\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\dotnet\MyConsoleApp\obj\Debug\net9.0\ref\MyConsoleApp.dll
+C:\Users\ASUS\Desktop\dotnet\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.sourcelink.json
