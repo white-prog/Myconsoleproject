@@ -5,10 +5,28 @@
 //Console.Write("Please enter your name: ");
 //string name = Console.ReadLine();
 //Console.WriteLine("Hello, " + name);
+
+
 Console.Write("Enter an integer: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num % 2 == 0){
     Console.WriteLine("Even");
 }else{
     Console.WriteLine("Odd");
+}
+
+//FizzBuzz
+
+Console.Write("Enter an Value: ");
+int value = Convert.ToInt32(Console.ReadLine());
+for(int start = 0; start <= value; start++){
+    if(start % 3 == 0 && start % 5 == 0){
+        Console.WriteLine("FizzBuzz" + " " + start);
+    }else if(start % 3 == 0){
+        Console.WriteLine("Fizz" + " " + start);
+    }else if(start % 5 == 0){
+        Console.WriteLine("Buzz" + " " + start);
+    }else{
+        Console.WriteLine("We don't know" + " " + start);
+    }
 }
