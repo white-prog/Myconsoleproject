@@ -30,3 +30,29 @@ for(int start = 0; start <= value; start++){
         Console.WriteLine("We don't know" + " " + start);
     }
 }
+
+//Pyramid
+Console.Write("Enter pyramid size: ");
+int how_much = Convert.ToInt32(Console.ReadLine());
+
+for(int i = 1; i <= how_much;i++){
+    for(int j = 1; j <= i;j++){
+        Console.Write(" * ");
+    }
+    Console.WriteLine("");
+}
+
+//A function in C#
+int getAmount(int price,int pieces){
+    return price * pieces;
+
+}
+Console.Write("Enter price: ");
+int rate = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter pieces: ");
+int pieces = Convert.ToInt32(Console.ReadLine());
+int price_amnt = getAmount(rate,pieces);
+
+Console.WriteLine($"Total price : {price_amnt}");
+
+//operation and Variable and Expression
