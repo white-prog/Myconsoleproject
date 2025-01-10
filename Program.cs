@@ -56,3 +56,20 @@ int price_amnt = getAmount(rate,pieces);
 Console.WriteLine($"Total price : {price_amnt}");
 
 //operation and Variable and Expression
+int number = 10;
+Console.WriteLine(number);
+
+float float_number = 10.5f;
+Console.WriteLine(float_number);
+
+double double_number = 10.5;
+Console.WriteLine(double_number);
+
+bool is_true = true;
+Console.WriteLine(is_true);
+
+string name = "John";
+Console.WriteLine(name);
+
+char character = 'A';
+Console.WriteLine(character);
