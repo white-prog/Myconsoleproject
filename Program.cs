@@ -73,3 +73,30 @@ Console.WriteLine(name);
 
 char character = 'A';
 Console.WriteLine(character);
+
+//avearge marks
+Console.WriteLine("AVERAGE MARKS");
+
+Console.Write("Enter number of subjects : ");
+int subjects = Convert.ToInt32(Console.ReadLine());
+int sum_mark = 0;
+for(int i = 1;i <= subjects;i++){
+    Console.Write("Enter mark: ");
+    sum_mark += Convert.ToInt32(Console.ReadLine());
+}
+int average = sum_mark / subjects;
+Console.WriteLine($"Average : {average}");
+//Temperature convert 
+double ConverterTemp(int temp,char fromUnit,char toUnit){
+    if (fromUnit == 'C' && toUnit == 'F')
+    {
+        return (temp * 9 / 5) + 32;
+    }
+    else if (fromUnit == 'F' && toUnit == 'C')
+    {
+        return (temp - 32) * 5 / 9;
+    }
+    return 0;
+}
+double Temperature_to_Fahren = ConverterTemp(36,'C','F');
+Console.WriteLine($"36 C = {Temperature_to_Fahren} F");
