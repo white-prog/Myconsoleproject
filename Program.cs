@@ -5,7 +5,7 @@
 //Console.Write("Please enter your name: ");
 //string name = Console.ReadLine();
 //Console.WriteLine("Hello, " + name);
-
+/*
 
 Console.Write("Enter an integer: ");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -100,18 +100,30 @@ double ConverterTemp(int temp,char fromUnit,char toUnit){
 }
 double Temperature_to_Fahren = ConverterTemp(36,'C','F');
 Console.WriteLine($"36 C = {Temperature_to_Fahren} F");
-
+*/
 //Searching from list
 List<int> numbers = new List<int>();
 
 while (true){
     Console.Write("Enter number to list: ");
-    int value = Convert.ToInt32(Console.ReadLine());
-    numbers.Add(5);
-    Console.Write("Enter 'E' for exit: ");
-    char character = Convert.ToChar(Console.ReadLine());
-    if (character == 'E'){
+    int val = Convert.ToInt32(Console.ReadLine());
+    numbers.Add(val);
+    Console.Write("Enter 'E' for exit 'N' for continue : ");
+    char c = Convert.ToChar(Console.ReadLine());
+    if (c == 'E'){
         Console.WriteLine("Thanks");
         break;
     }
 }
+int length = numbers.Count;
+Console.Write("Enter value to get position from your list = ");
+int numinp = Convert.ToInt32(Console.ReadLine());
+for (int i = 0; i < length; i++){
+    if (numinp == numbers[i]){
+        Console.WriteLine($"value at {i} : {numbers[i]}");
+    }else{
+        Console.WriteLine($"Not at position {i}");
+    }
+}
+
+
