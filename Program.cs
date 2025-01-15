@@ -100,3 +100,18 @@ double ConverterTemp(int temp,char fromUnit,char toUnit){
 }
 double Temperature_to_Fahren = ConverterTemp(36,'C','F');
 Console.WriteLine($"36 C = {Temperature_to_Fahren} F");
+
+//Searching from list
+List<int> numbers = new List<int>();
+
+while (true){
+    Console.Write("Enter number to list: ");
+    int value = Convert.ToInt32(Console.ReadLine());
+    numbers.Add(5);
+    Console.Write("Enter 'E' for exit: ");
+    char character = Convert.ToChar(Console.ReadLine());
+    if (character == 'E'){
+        Console.WriteLine("Thanks");
+        break;
+    }
+}
