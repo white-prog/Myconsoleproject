@@ -102,6 +102,7 @@ double Temperature_to_Fahren = ConverterTemp(36,'C','F');
 Console.WriteLine($"36 C = {Temperature_to_Fahren} F");
 */
 //Searching from list
+/*
 List<int> numbers = new List<int>();
 
 while (true){
@@ -125,5 +126,29 @@ for (int i = 0; i < length; i++){
         Console.WriteLine($"Not at position {i}");
     }
 }
+*/
+//Prime number
+string IsPrime(int number){
+    if(number < 2){
+        return "Not prime";
+    }else{
+        for (int i = 2; i < number; i++){
+            if (number % i == 0){
+                return "Not Prime";
+            }
+        }
+        return "Prime";
+
+    }
+}
+
+
+
+
+Console.Write("Enter number: ");
+int numes = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(IsPrime(numes));
+
+
 
 
