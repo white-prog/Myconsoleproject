@@ -146,8 +146,14 @@ string IsPrime(int number){
 
 
 Console.Write("Enter number: ");
-int numes = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(IsPrime(numes));
+try{
+    int numes = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(IsPrime(numes));
+}catch(Exception e){
+    Console.WriteLine($"An error occured : {e.Message}");
+}finally{
+    Console.WriteLine("This block has executed");
+}
 
 
 
